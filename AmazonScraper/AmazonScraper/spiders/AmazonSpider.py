@@ -5,7 +5,6 @@ from AmazonScraper.items import DetailsItem
 
 
 class AmazonSpider(CrawlSpider):
-    count = 0
     name = "amazon"
     allowed_urls = ["amazon.com"]
     start_urls = [
@@ -46,7 +45,6 @@ class AmazonSpider(CrawlSpider):
         details["dimensions"] = response.xpath( self.getxpath_by_text("Product Dimensions:") ).extract()
         details["weight"] = response.xpath( self.getxpath_by_text("Shipping Weight:") ).extract()
         details["average_customer_review"] = response.xpath("//span[@class='crAvgStars']/span/a/span/@title").extract()
-        self.count +=1
         yield details
 
     def getxpath_by_text(self, text):
