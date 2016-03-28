@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CardsInList</string>
+    <string name="app_name">List of Cards</string>
     <string name="email">Email:</string>
     <string name="city">City:</string>
 </resources>
