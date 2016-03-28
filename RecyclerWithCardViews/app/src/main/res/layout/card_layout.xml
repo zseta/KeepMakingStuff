@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/colorCardBg">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/name"
+            android:background="?android:attr/listDivider"/>
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/name"
+            android:text="@string/email"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/emailText"
+            android:layout_alignBaseline="@+id/emailText"
+            android:paddingLeft="50dp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/cityText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/city"
+            android:layout_below="@id/emailText"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/emailText"
+            android:layout_alignBaseline="@+id/cityText"
+            android:textStyle="bold"
+            android:paddingLeft="50dp"
+            android:gravity="center_vertical"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
